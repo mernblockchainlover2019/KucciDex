@@ -1,6 +1,6 @@
 import Header from "@/components/header"
 import Section from "@/components/section"
-
+import { Widget } from "@rango-dev/widget-embedded";
 import styles from '@/styles/home.module.css';
 
 const config = {
@@ -27,7 +27,8 @@ export default function Home() {
     <Section>
       <Header />
       <div className="absolute w-[180px] right-[160px] top-[-80px]">
-        <img src="1.gif" className="rotate-[120deg]" />
+    <img src="1.gif" className="rotate-[120deg]" alt="Description of Image 1" />
+    <img src="2.gif" className="" alt="Description of Image 2" />    <img src="1.gif" className="rotate-[120deg]" />
       </div>
       <div className="absolute w-[380px] right-[-60px] top-[260px]">
         <img src="2.gif" className="" />
