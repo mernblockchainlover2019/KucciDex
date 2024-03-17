@@ -1,6 +1,6 @@
 
 export default function Header() {
-    return <div className="m-[50px]">
+    return <div className="m-[50px] relative z-[1]">
         <div className="flex">
             <img src="icon.svg" className="h-[50px]" />
             <span className="font-logo ml-2 text-4xl mr-auto">Dexifier</span>

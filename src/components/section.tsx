@@ -9,7 +9,7 @@ export default function Section(props: any) {
             </div>
         </div>
         <div className="relative">
-            <div className="container mx-auto">
+            <div className="max-w-[1366px] mx-auto relative">
                 {props.children}
             </div>
         </div>
