@@ -1,14 +1,18 @@
 
+import styles from '@/styles/home.module.css';
+
 export default function Header() {
-    return <div className="m-[50px] relative z-[1]">
+    return <div className="mx-[72px] my-[48px] relative z-[1]">
         <div className="flex">
             <img src="icon.svg" className="h-[50px]" />
-            <span className="font-logo ml-2 text-4xl mr-auto">Dexifier</span>
-            <a href="#" className="font-label mt-5 mr-8 text-xl">support</a>
-            <a href="#" className="font-label mt-5 mr-8 text-xl">guides</a>
-            <a href="#" className="font-label mt-5 mr-8 text-xl">docs</a>
-            <a href="#" className="font-label mt-5 text-xl">about us</a>
+            <div className={"ml-2 mr-auto " + styles.textLogo}>Dexifier</div>
+            <div className="flex gap-8 mt-4">
+                <a href="#" className={styles.textNavBar}>support</a>
+                <a href="#" className={styles.textNavBar}>guides</a>
+                <a href="#" className={styles.textNavBar}>docs</a>
+                <a href="#" className={styles.textNavBar}>about us</a>
+            </div>
         </div>
-        <span className="font-label ml-14 -mt-1 text-xs block">home of alpha</span>
+        <span className={"ml-14 -mt-2 block " + styles.textLogoSubtitle}>home of alpha</span>
     </div>
 }

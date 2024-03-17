@@ -1,0 +1,121 @@
+.textHighlight {
+    color: #00fcfe;
+}
+
+.textLogo {
+    font-family: YAEU7hcr-Pk-0;
+    font-size: 38px;
+    line-height: 100%;
+}
+
+.textLogoSubtitle {
+    font-family: YAFdJmu7CPY-0;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.textNavBar {
+    font-family: YAFdJmu7CPY-0;
+    font-size: 21.33px;
+    font-weight: 700;
+}
+
+.textVideoTitle {
+    font-family: YAFdJgp7PFE-0;
+    font-size: 28px;
+    line-height: 100%;
+}
+
+.textVideoSubtitle {
+    font-family: YAEnS2G4JLg-0;
+    font-size: 14px;
+}
+
+.textSectionTitle28 {
+    font-family: YAFdJmu7CPY-0;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.textSectionTitle40 {
+    font-family: YAFdJmu7CPY-0;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.textSectionTitle48 {
+    font-family: YAFdJmu7CPY-0;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.textSectionContent {
+    font-family: YAEnS2G4JLg-0;
+    font-size: 21.33px;
+}
+
+.textExchange {
+    font-family: YAEnS2G4JLg-0;
+    font-size: 36px;
+    color: #f2f2f2;
+}
+
+.cardPrivacy {
+    font-family: YAFdJmu7CPY-0;
+    font-size: 42.66px;
+    font-weight: 700;
+    color: #d73cbe;
+    background: #f2f2f2;
+    padding: 60px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.textCommunity {
+    font-family: YAEnS2G4JLg-0;
+    font-size: 37.33px;
+    font-weight: 700;
+}
+
+.textSocials {
+    font-family: YAFdJmu7CPY-0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.textIconText {
+    font-family: YAFdJmu7CPY-0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.buttonJoin {
+    font-family: YAEnS2G4JLg-0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 100%;
+    background: #d73cbe;
+    border-radius: 10px;
+    padding: 20px 40px;
+    width: fit-content;
+}
+
+@media (min-width: 1024.05px) and (max-width: 1366px) {
+    .textNavBar {
+        font-size: 1.5615vw;
+    }
+}
+
+@media (min-width: 768.05px) and (max-width: 1024px) {
+    .textNavBar {
+        font-size: 2.083vw;
+    }
+}
+
+@media (min-width: 480.05px) and (max-width: 768px) {
+    .textNavBar {
+        font-size: 2.083vw;
+    }
+}
