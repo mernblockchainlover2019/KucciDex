@@ -652,18 +652,13 @@ body {
   font-weight: 900;
 }
 
-.font-logo {
-  font-family: YAEU7hcr-Pk-0;
+.wallets div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.font-label {
-  font-family: YAFdJmu7CPY-0;
-}
-
-.font-title {
-  font-family: YAFdJgp7PFE-0;
-}
-
-.font-content {
-  font-family: YAEnS2G4JLg-0;
+.wallets div img {
+  height: min-content;
+  max-height: 100%;
 }
