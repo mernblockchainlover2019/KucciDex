@@ -27,20 +27,20 @@ export default function Home() {
   return <main>
     <Section>
       <Header />
-      <div className="absolute w-[180px] right-[160px] top-[-80px]">
-        <img src="1.gif" className="rotate-[120deg]" alt="Description of Image 1" />
-      </div>
-      <div className="absolute w-[380px] right-[-60px] top-[260px]">
-        <img src="2.gif" className="" alt="Description of Image 2" />
-      </div>
       <div className="grid grid-cols-3 mx-[120px] gap-[20px]">
         <div>
           <div className={styles.textVideoTitle}>First Time on Dexifier?</div>
           <div className={"my-2 " + styles.textVideoSubtitle}>Watch this video</div>
           <iframe src="https://www.youtube.com/embed/pq7g0O76g2E" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
         </div>
-        <div>
-          <iframe className="w-full h-[700px] z-[1] relative" src={`https://widget.rango.exchange/?config=${JSON.stringify(config)}`} />
+        <div className="col-span-2 relative">
+          <iframe className="w-[360px] h-[700px] z-[1] relative" src={`https://widget.rango.exchange/?config=${JSON.stringify(config)}`} />
+          <div className="absolute w-[180px] right-[40px] top-[-200px]">
+            <img src="1.gif" className="rotate-[120deg]" alt="gif1" />
+          </div>
+          <div className="absolute w-[380px] right-[-180px] top-[140px]">
+            <img src="2.gif" className="" alt="gif2" />
+          </div>
         </div>
       </div>
     </Section>
@@ -50,8 +50,13 @@ export default function Home() {
           <span className={styles.textHighlight}>Easy</span> & Infinite Exchange routes
         </div>
         <div></div>
-        <div>
-
+        <div className="relative">
+          <div className="absolute w-[333px] left-[120px] top-[0px]">
+            <img src="3.gif" className="rotate-[-95deg]" alt="gif3" />
+          </div>
+          <div className="absolute w-[280px] left-[0px] top-[-40px]">
+            <img src="5.gif" className="rotate-[75deg]" alt="gif5" />
+          </div>
         </div>
         <div className={styles.textExchange}>
           We automatically find the fastest & cheapest trade routes for you. <br /><br />
@@ -60,7 +65,7 @@ export default function Home() {
       </div>
     </Section>
     <Section>
-      <div className="grid mx-[120px] gap-[20px]">
+      <div className="grid mx-[120px] gap-[40px]">
         <div className={styles.textSectionTitle48}>
           <span className={styles.textHighlight}>Privacy</span> comes first
         </div>
@@ -78,12 +83,12 @@ export default function Home() {
       </div>
     </Section>
     <Section>
-      <div className="grid mx-[80px] p-[120px] pt-[40px] border gap-[20px]">
+      <div className="grid mx-[80px] mt-[60px] p-[120px] pt-[40px] border gap-[20px]">
         <div className={"text-center " + styles.textSectionTitle40}>
           <span className={styles.textHighlight}>Frequently</span> traded pairs
         </div>
         <div className="grid grid-cols-3 mt-[40px] gap-[20px]">
-          <div className={"grid gap-[20px] underline " + styles.textSectionContent}>
+          <div className={"grid gap-[30px] underline " + styles.textSectionContent}>
             <a href="#">ETH to BTC</a>
             <a href="#">LTC to ETH</a>
             <a href="#">USDT to BTC</a>
@@ -91,7 +96,7 @@ export default function Home() {
             <a href="#">BTC to USDT</a>
             <a href="#">ETH to BTC LTC to ETH</a>
           </div>
-          <div className={"grid gap-[20px] underline " + styles.textSectionContent}>
+          <div className={"grid gap-[30px] underline " + styles.textSectionContent}>
             <a href="#">ETH to BTC</a>
             <a href="#">LTC to ETH</a>
             <a href="#">USDT to BTC</a>
@@ -100,10 +105,16 @@ export default function Home() {
             <a href="#">ETH to BTC LTC to ETH</a>
           </div>
         </div>
+        <div className="absolute w-[180px] left-[0px] top-[-140px]">
+          <img src="1.gif" className="rotate-[-95deg]" alt="gif1" />
+        </div>
+        <div className="absolute w-[480px] right-[120px] bottom-[-20px]">
+          <img src="4.gif" className="rotate-[35deg]" alt="gif4" />
+        </div>
       </div>
     </Section>
     <Section>
-      <div className="flex ml-[120px] mr-[40px] gap-[20px]">
+      <div className="flex ml-[120px] mr-[40px] mt-[140px] gap-[20px]">
         <div className="w-[55%] p-[40px] border">
           <div className={styles.textSectionTitle40}>
             <span className={styles.textHighlight}>24/7</span> Customer Support
@@ -118,12 +129,23 @@ export default function Home() {
         <div className="w-[45%] flex items-center">
           <img src="customer.png" alt="customer" />
         </div>
+        <div className="absolute w-[260px] left-[-120px] top-[-120px]">
+          <img src="5.gif" className="rotate-[-150deg]" alt="gif5" />
+        </div>
       </div>
     </Section>
     <Section>
       <div className="flex ml-[120px] mr-[40px] gap-[20px]">
         <div className={"w-[45%] " + styles.textSectionTitle40}>
           <span className={styles.textHighlight}>Wallets</span> & Projects supported
+          <div className="relative">
+            <div className="absolute w-[400px] left-[-80px] top-[60px]">
+              <img src="2.gif" className="rotate-[0deg]" alt="gif2" />
+            </div>
+            <div className="absolute w-[260px] right-[120px] top-[140px]">
+              <img src="5.gif" className="rotate-[-150deg]" alt="gif5" />
+            </div>
+          </div>
         </div>
         <div className="w-[55%] grid grid-cols-3 gap-x-[70px] gap-y-[35px] wallets" style={{ gridAutoRows: '150px' }}>
           <div className="bg-white"><img src="wallets/xdefi.jpg" alt="xdefi" /></div>
@@ -157,6 +179,14 @@ export default function Home() {
               <img src="socials/twitter.svg" alt="twitter" />
               <img src="socials/youtube.svg" alt="youtube" />
             </div>
+          </div>
+        </div>
+        <div className="relative">
+          <div className="absolute w-[330px] left-[120px] top-[60px]">
+            <img src="3.gif" className="rotate-[-160deg]" alt="gif3" />
+          </div>
+          <div className="absolute w-[280px] left-[40px] top-[240px]">
+            <img src="5.gif" className="rotate-[6deg]" alt="gif5" />
           </div>
         </div>
       </div>
