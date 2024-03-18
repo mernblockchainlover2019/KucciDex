@@ -159,6 +159,7 @@ export default function Home() {
           <div><img src="wallets/maya.png" alt="maya" /></div>
           <div><img src="wallets/1inch.svg" alt="1inch" /></div>
           <div><img src="wallets/across.png" alt="across" /></div>
+          <div className={styles.textIconText}>Many More...</div>
         </div>
       </div>
     </Section>
