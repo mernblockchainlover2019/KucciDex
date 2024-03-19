@@ -6,6 +6,12 @@
     position: relative;
 }
 
+@media (max-width: 1365.95px) {
+    .section {
+        height: auto;
+    }
+}
+
 .section .background {
     width: 100%;
     height: 100%;

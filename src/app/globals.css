@@ -662,3 +662,35 @@ body {
   height: min-content;
   max-height: 100%;
 }
+
+.show-on-mobile {
+  display: none;
+}
+
+.show-on-desktop {
+  display: block;
+}
+
+@media (max-width: 767.95px) {
+  .show-on-desktop {
+    display: none;
+  }
+
+  .show-on-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 1023.95px) {
+  #home1 {
+    order: 2;
+    text-align: center;
+    padding-top: 0;
+  }
+
+  #home2 {
+    order: 1;
+    display: flex;
+    justify-content: center;
+  }
+}
