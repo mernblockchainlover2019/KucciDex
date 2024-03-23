@@ -2,34 +2,15 @@
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Section from "@/components/section";
-import { Widget } from "@rango-dev/widget-embedded";
+import RangoWidget from '@/components/rango-widget'
 import styles from '@/styles/home.module.css';
-
-const config = {
-  "amount": 1,
-  "from": { "blockchain": "ETH", "token": { "blockchain": "ETH", "address": null, "symbol": "ETH" } },
-  "to": { "blockchain": "thorchain", "token": { "blockchain": "thorchain", "address": null, "symbol": "RUNE" } },
-  "theme": {
-    "mode": "light",
-    "borderRadius": 10,
-    "secondaryBorderRadius": 5,
-    "singleTheme": true, "colors": { "light": { "primary": "$1d054c" } }
-  },
-  "affiliate": {
-    "ref": "eHvDvg",
-    "percent": 0.25,
-    "wallets": { "ETH": "your wallet", "BSC": "your wallet", "POLYGON": "your wallet" }
-  },
-  "apiKey": "c6381a79-2817-4602-83bf-6a641a409e32",
-  "walletConnectProjectId": "e24844c5deb5193c1c14840a7af6a40b"
-}
 
 export default function Home() {
   return <main>
     <Section>
       <Header />
       <div className={styles.sectionHome}>
-        <div id="home1" className="pt-[80px]">
+        <div id="home1" className="pt-[80px] z-[1] relative">
           <div className={styles.textVideoTitle}>First Time on Dexifier?</div>
           <div className={"my-2 " + styles.textVideoSubtitle}>Watch this video</div>
           <div className="flex">
@@ -37,7 +18,9 @@ export default function Home() {
           </div>
         </div>
         <div id="home2" className="col-span-2 relative">
-          <iframe className="w-[360px] h-[540px] z-[1] relative" src={`https://widget.rango.exchange/?config=${JSON.stringify(config)}`} />
+          <div className="min-h-[540px] z-[1] relative">
+            <RangoWidget />
+          </div>
           <div className="absolute w-[180px] right-[40px] top-[-200px]">
             <img src="1.gif" className="rotate-[120deg]" alt="gif1" />
           </div>
