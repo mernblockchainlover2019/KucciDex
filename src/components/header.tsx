@@ -2,7 +2,7 @@
 import styles from '@/styles/home.module.css';
 
 export default function Header() {
-    return <div className={"my-[48px] relative z-[1] " + styles.header}>
+    return <div className={"mt-[48px] mb-[96px] relative z-[1] " + styles.header}>
         <div className="flex">
             <img src="icon.svg" className={styles.iconLogo} />
             <div className={"ml-2 mr-auto " + styles.textLogo}>Dexifier</div>
