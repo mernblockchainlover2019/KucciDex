@@ -7,7 +7,7 @@ import styles from '@/styles/home.module.css';
 
 export default function Home() {
   return <main>
-    <Section>
+    <Section >
       <Header />
       <div className={styles.sectionHome}>
         <div id="home1" className="z-[1] relative">
@@ -17,13 +17,13 @@ export default function Home() {
             <iframe className="home1Video max-w-full" src="https://www.youtube.com/embed/pq7g0O76g2E" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
           </div>
         </div>
-        <div id="home2">
-          <div className="min-h-[540px] z-[1] relative">
-            <RangoWidget />
+        <div id="home2" className="relative z-[1]">
+          <div className="min-h-[540px] relative">
+              <RangoWidget />
           </div>
         </div>
-        <div id="home3" className="flex">
-          <div className="home3Div w-[380px] h-[380px] ml-auto mt-auto relative">
+        <div id="home3" className="relative mx-2">
+          <div className="home3Div w-[100%] max-w-[320px] h-[320px] ml-auto mt-auto absolute top-[40px] right-0">
             <div className="absolute w-full right-[0] bottom-[0px]">
               <div className="absolute w-[25%] top-[-15%] left-[5%]">
                 <img src="1.gif" className="rotate-[120deg]" alt="gif1" />

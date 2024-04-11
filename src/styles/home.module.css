@@ -204,6 +204,9 @@
     margin-right: 75px;
     gap: 80px;
 }
+.c-ksvIpq .footer__content{
+    margin-top: 10px;
+}
 
 @media (max-width: 1365.95px) {
     .sectionExchange {
