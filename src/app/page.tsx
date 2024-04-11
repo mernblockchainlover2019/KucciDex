@@ -23,7 +23,7 @@ export default function Home() {
           </div>
         </div>
         <div id="home3" className="relative mx-2">
-          <div className="home3Div w-[100%] max-w-[320px] h-[320px] ml-auto mt-auto absolute top-[270px] right-0">
+          <div className="home3Div w-[100%] max-w-[320px] h-[320px] ml-auto mt-auto absolute top-[40px] right-0">
             <div className="absolute w-full right-[0] bottom-[0px]">
               <div className="absolute w-[25%] top-[-15%] left-[5%]">
                 <img src="1.gif" className="rotate-[120deg]" alt="gif1" />
