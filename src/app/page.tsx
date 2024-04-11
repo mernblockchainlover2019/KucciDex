@@ -7,7 +7,7 @@ import styles from '@/styles/home.module.css';
 
 export default function Home() {
   return <main>
-    <Section>
+    <Section >
       <Header />
       <div className={styles.sectionHome}>
         <div id="home1" className="z-[1] relative">
@@ -17,9 +17,9 @@ export default function Home() {
             <iframe className="home1Video max-w-full" src="https://www.youtube.com/embed/pq7g0O76g2E" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
           </div>
         </div>
-        <div id="home2">
-          <div className="min-h-[540px] z-[1] relative">
-            <RangoWidget />
+        <div id="home2" className="relative z-[1]">
+          <div className="min-h-[540px] relative">
+              <RangoWidget />
           </div>
         </div>
         <div id="home3" className="flex">

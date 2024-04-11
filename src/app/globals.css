@@ -702,3 +702,11 @@ body {
 #rango-swap-box {
   width: auto !important;
 }
+
+.c-ksvIpq .footer__content{
+  margin-top: 10px
+}
+
+main section:first-child {
+  height: 915px;
+}
