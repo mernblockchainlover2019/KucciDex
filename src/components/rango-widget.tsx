@@ -25,7 +25,7 @@ const config : WidgetConfig = {
             }
         }
     },
-    amount: 1,
+    amount: 0,
     from: {
       blockchain: "BSC",
       token: {
