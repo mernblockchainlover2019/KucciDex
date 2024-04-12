@@ -1,13 +1,30 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import { WidgetConfig } from "@rango-dev/widget-embedded";
 
-const config = {
+const config : WidgetConfig = {
     // This API key is only for test purpose. Don't use it in production.
     apiKey: "19193389-443b-4d59-9dd9-500bde0931c7",
     // This project id is only for test purpose. Don't use it in production.
     // Get your Wallet Connect project id from https://cloud.walletconnect.com/
     walletConnectProjectId: "489c5034628c45947388bc9a0ef2ea03",
+    variant: 'expanded',
+    theme: {
+        mode: 'dark',
+        fontFamily: 'Arial',
+        singleTheme: true,
+        colors: {
+            dark: {
+                primary: '#4c228a',
+                secondary: '#6D49A6',
+                neutral: '#2c284b',
+                info: '#6B3CB1',
+                foreground: '#fcf7ff',
+                background: '#120f29ff'
+            }
+        }
+    },
     amount: 1,
     from: {
       blockchain: "BSC",
