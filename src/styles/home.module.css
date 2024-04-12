@@ -123,7 +123,7 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     margin-left: 75px;
-    margin-right: 75px;
+    margin-right: 65px;
     gap: 20px;
 }
 
