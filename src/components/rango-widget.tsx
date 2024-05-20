@@ -25,6 +25,7 @@ const config : WidgetConfig = {
             }
         }
     },
+    enableCentralizedSwappers: true,
     amount: 0,
     from: {
       blockchain: "BSC",
